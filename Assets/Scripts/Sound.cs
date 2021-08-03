@@ -4,11 +4,10 @@ using UnityEngine;
 [System.Serializable]
 public class Sound 
 {
+    // Create the audio name, audioclip source file and audio functionalities ie volume, pitch and spatialBlend
     public string name;
     public AudioClip clip;
 
-    //[Range(0, 256)]
-   // public int priority;
     [Range(0f, 1f)]
     public float volume;
     [Range(.1f, 3f)]

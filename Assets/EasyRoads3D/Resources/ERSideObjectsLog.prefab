@@ -473,11 +473,11 @@ MonoBehaviour:
   - version: 2.0.0
     name: Side Object 3
     id: 1614645855.239706
-    timestamp: 1614735166.5838735
+    timestamp: 1627899476.1296005
     objectType: 0
     gameobjectGUID: 
     textureGUID: 
-    m_distance: 10
+    m_distance: 2
     uvx: 0.1
     uvy: 1
     position: 0
@@ -504,7 +504,7 @@ MonoBehaviour:
     weld: 1
     combine: 0
     combineInstantiated: 1
-    markerActive: 1
+    markerActive: 0
     uvType: 0
     uv: 1
     randomObjects: 0
@@ -533,8 +533,7 @@ MonoBehaviour:
     collider: 0
     boxcollider: 0
     tangents: 0
-    sourceObject: {fileID: 919132149155446097, guid: 24948359fd85d9444a4f6993e3eb0f72,
-      type: 3}
+    sourceObject: {fileID: 100000, guid: e9aa4b7def958e54bad9089e96b5a063, type: 3}
     flipMesh: 0
     startObject: {fileID: 0}
     endObject: {fileID: 0}
@@ -556,7 +555,7 @@ MonoBehaviour:
     defaultStartOffset: 0
     defaultEndOffset: 0
     totalZDistance: 0
-    middleZDistance: 10
+    middleZDistance: 2
     startZDistance: 0
     endZDistance: 0
     minStartZ: 10000
@@ -572,7 +571,7 @@ MonoBehaviour:
     bridgeObject: 0
     tunnelObject: 0
     snapToTerrain: 0
-    layer: 0
+    layer: 1
     deformationObject: 0
     isStatic: 0
     castShadows: 1
@@ -1112,7 +1111,7 @@ MonoBehaviour:
   - version: 2.0.0
     name: Side Object 6
     id: 1614646042.1492708
-    timestamp: 1614735877.2629023
+    timestamp: 1627896327.2883666
     objectType: 0
     gameobjectGUID: 
     textureGUID: 

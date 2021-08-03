@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    //public float throttle;
+    // Steering value
     public float steer;
-    public bool l;
-    public bool action;
 
-    // Update is called once per frame
+    // Headlight value
+    public bool l;
+    
     void Update()
     {
-       // throttle = Input.GetAxis("Vertical");
         steer = Input.GetAxis("Horizontal");
         l = Input.GetKeyDown(KeyCode.L);
-        action = Input.GetKey(KeyCode.Space);
     }
 }
