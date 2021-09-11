@@ -7,12 +7,14 @@ using UnityEngine.UI;
 public class BehaviouralData : MonoBehaviour
 {
     // Personal Data from the participant
-    public static string userName;
+    public static string userId;
     public static string userAge;
     public static string userGender;
-    public GameObject getUserName;
+    //public GameObject getUserId;
     public GameObject getUserAge;
     public GameObject getUserGender;
+
+    public static int newId;
 
     // Confusion Matrix values
     public static int truePositives = 0;
@@ -27,15 +29,23 @@ public class BehaviouralData : MonoBehaviour
         Debug.Log("True Negatives: " + trueNegative);
         Debug.Log("False Negatives: " + falseNegative);*/
     }
- 
+
+    public void getCurrentId(int id) {
+        newId = id + 1;
+        Debug.Log("We are getting the next id as "+newId);
+    }
+    public void firstID() {
+        newId = 1;
+        Debug.Log("We are getting the first id as " + newId);
+    }
     public void UserDetails()
     {
         Debug.Log("We are inside user details");
         //Debug.Log(getUserName.GetComponent<TextMeshProUGUI>().text);
-        userName = getUserName.GetComponent<TextMeshProUGUI>().text;
+        userId = newId.ToString();
         userAge = getUserAge.GetComponent<TextMeshProUGUI>().text;
         userGender = getUserGender.GetComponent<TextMeshProUGUI>().text;
-        Debug.Log("The user name is " + userName);
+        Debug.Log("The user name is " + userId);
         Debug.Log("The user age is " + userAge);
         Debug.Log("The user gender is " + userGender);
     }
@@ -43,7 +53,7 @@ public class BehaviouralData : MonoBehaviour
     public static void SaveData() { 
         CSVManager.AppendToFile(
             new string[7] { 
-            userName,
+            userId,
             userAge,
             userGender,
             truePositives.ToString()+(" TP"),

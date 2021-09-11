@@ -10,7 +10,7 @@ public static class CSVManager
     private static string dataFileName = "userData.csv";
     private static string dataSeparator = ",";
     private static string[] fileHeaders = new string[7] {
-        "Name",
+        "id",
         "Age",
         "Gender",
         "True Positives",
@@ -22,8 +22,8 @@ public static class CSVManager
 
     public static void AppendToFile(string[] strings)
     {
-        VerifyDirectory();
-        VerifyFile();
+        //VerifyDirectory();
+        //VerifyFile();
         using (StreamWriter sw = File.AppendText(GetFilePath()))
         {
             string finalString = "";
@@ -77,7 +77,7 @@ public static class CSVManager
 
     static string GetDirectoryPath() 
     {
-        return Application.dataPath + "/" + dataFolderName;
+        return Application.dataPath + "/Resources/" + dataFolderName;
     }
 
     static string GetFilePath()

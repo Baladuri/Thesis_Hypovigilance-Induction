@@ -6,6 +6,9 @@ TagManager:
   tags:
   - xsign
   - osign
+  - rightSide
+  - leftSide
+  - sideObject
   layers:
   - Default
   - TransparentFX

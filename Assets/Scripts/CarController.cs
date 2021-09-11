@@ -47,18 +47,7 @@ public class CarController : MonoBehaviour
     void FixedUpdate()
     {
         // For implementing the constant acceleration in the truck
-        //rb.AddForce(0, 0, Time.deltaTime * forwardForce);
-        
-        //rb.MovePosition(transform.position + (transform.forward * Time.deltaTime));
-        //Vector3 vector3 = 
         rb.velocity = transform.forward * Time.fixedDeltaTime * forwardForce;
-        /*Vector3 velocity = rb.velocity;
-        if (velocity.y > 0) {
-            velocity.y = 0;
-        }
-        rb.velocity = velocity;*/
-        
-        //ConstantForce.relativeForce =
 
         // For implementing the steering functionalities to the wheel colliders and as well appending the rotation transformations to the steering wheel gameobject
         steeringWheel.GetComponent<Renderer>().transform.localEulerAngles = new Vector3(-69.10001f, 0f, (input.steer * maxturn));

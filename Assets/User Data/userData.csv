@@ -1,7 +1,6 @@
-user name,true positives,true negatives,false positives,false negatives,time stamp
-fdfsdf​,sdfsdf​,sdfsdf​,0,0,0,07/30/2021 8:08:42 PM
-tauqeer​,30​,male​,0,0,0,07/30/2021 8:14:09 PM
-dfds​,sdfsdf​,sdfsdf​,0,0,0,07/30/2021 8:23:11 PM
-sdfds​,sdfsa​,sdfsdfd​,0,0,0,07/30/2021 8:24:25 PM
-ddsf​,sdfasdf​,sdfsdf​,1,0,0,07/30/2021 8:28:21 PM
-SDFA​,ASDFASDF​,ASDFASDF​,5 True Positives,1 True Negatives,0 False Positives,2 False Negatives7/31/2021 4:13:38 PM
+id,Age,Gender,True Positives,True Negatives,False Positives,False Negatives,time stamp
+1​,23​,2​,0 TP,0 TN,0 FP,0 FN9/9/2021 7:34:48 PM
+1​,23​,2​,1 TP,0 TN,0 FP,0 FN9/9/2021 7:35:05 PM
+2​,33​,2​,0 TP,0 TN,0 FP,0 FN9/9/2021 7:36:10 PM
+2​,33​,2​,1 TP,0 TN,0 FP,0 FN9/9/2021 7:36:26 PM
+22​,32​,323​,0 TP,0 TN,0 FP,0 FN9/10/2021 2:46:58 PM

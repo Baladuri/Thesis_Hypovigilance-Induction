@@ -15,15 +15,30 @@ public class CameraManager : MonoBehaviour
     public float d2 = 0f;
     public float h2 = 0f;
     public float l = 0f;
+    private bool paused;
 
     private int camMode = 0;
 
     void Update()
     {
         // Traverse between the view modes using 'C' Key  
-        if (Input.GetKeyDown(KeyCode.C)) {
-            camMode = (camMode + 1) % 2;
+        if (Time.timeScale == 0)
+        {
+            paused = true;
         }
+        else 
+        {
+            paused = false;
+        }
+
+        if (paused == false)
+        {
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                camMode = (camMode + 1) % 2;
+            }
+        }
+    
 
         switch (camMode) {
             // Inside the truck view

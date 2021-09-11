@@ -7,18 +7,38 @@ public class SceneController : MonoBehaviour
 {
     public GameObject truck;
     public GameObject returnToMainMenuPanel;
-    BehaviouralData saveData;
-    
-   // Update is called once per frame
+    public Animator FadeOut;
+    public Animator FadeIn;
+    public Animator FadeOutNewTaskPanel;
+    public GameObject taskOverPanel;
+    public Animator StartTask;
+    private Familarization familarization;
+
+    private IEnumerator Start()
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(0.5f);
+        StartTask.SetTrigger("Start");
+        familarization = GetComponent<Familarization>();           
+    }
+
+    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
         }
     }
-    public void changeScene()
+
+    public void startGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+        StartCoroutine(fadeOutAnimation());
+    }
+    public void startFamilarizationScene()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(fadeOutAnimationFamilarization());
     }
     public void quit()
     {
@@ -27,38 +47,78 @@ public class SceneController : MonoBehaviour
 
     public void startHypovigilance() 
     {
+        Time.timeScale = 1f;
         StartCoroutine(HypoVigilTaskDuration());
     }
     public void startHypervigilance()
     {
+        Time.timeScale = 1f;
         StartCoroutine(HyperVigilTaskDuration());
     }
     public void startControlCondition()
     {
+        Time.timeScale = 1f;
         StartCoroutine(ControlConditionTaskDuration());
+    }
+    public void startFamilarization()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(FamilarizationTaskDuration());
+        familarization.startCouroutines();
     }
 
     IEnumerator HypoVigilTaskDuration() {
-        yield return new WaitForSeconds(1000);
+        yield return new WaitForSeconds(5f);
         BehaviouralData.SaveData();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);    
+        StartCoroutine(fadeInAnimation());
+
     }
 
     IEnumerator HyperVigilTaskDuration() {
-        yield return new WaitForSeconds(50);
+        yield return new WaitForSeconds(5f);
         BehaviouralData.SaveData();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(fadeInAnimation());
     }
 
     IEnumerator ControlConditionTaskDuration() {
-        yield return new WaitForSeconds(10);
-        returnToMainMenuPanel.gameObject.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(fadeInAnimation());
     }
 
+    IEnumerator FamilarizationTaskDuration()
+    {
+        yield return new WaitForSeconds(20f);
+        StartCoroutine(fadeInAnimation());
+        returnToMainMenuPanel.SetActive(true);
+    }
+
+    IEnumerator fadeInAnimation() {
+        FadeIn.SetTrigger("StartFadeIn");
+        yield return new WaitForSeconds(5);
+        truck.gameObject.SetActive(false);
+        taskOverPanel.gameObject.SetActive(true);
+    }
+
+    public void NextTask() {
+        StartCoroutine(fadeOutAnimation());
+    }
+
+    IEnumerator fadeOutAnimation() {
+        FadeOutNewTaskPanel.SetTrigger("FadeOutNewTaskPanel");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    IEnumerator fadeOutAnimationFamilarization()
+    {
+        FadeOutNewTaskPanel.SetTrigger("FadeOutNewTaskPanel");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Familarization");
+    }
     public void goBackToMainMenu()
     {
         SceneManager.LoadScene("StartMenu");
-        truck.gameObject.SetActive(false);
+        //truck.gameObject.SetActive(false);
     }
 
 }
