@@ -68,20 +68,20 @@ public class SceneController : MonoBehaviour
     }
 
     IEnumerator HypoVigilTaskDuration() {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(600f);
         BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
 
     }
 
     IEnumerator HyperVigilTaskDuration() {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(600f);
         BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
     }
 
     IEnumerator ControlConditionTaskDuration() {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(60f);
         StartCoroutine(fadeInAnimation());
     }
 
@@ -94,7 +94,7 @@ public class SceneController : MonoBehaviour
 
     IEnumerator fadeInAnimation() {
         FadeIn.SetTrigger("StartFadeIn");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5f);
         truck.gameObject.SetActive(false);
         taskOverPanel.gameObject.SetActive(true);
     }

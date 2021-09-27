@@ -22,8 +22,8 @@ public static class CSVManager
 
     public static void AppendToFile(string[] strings)
     {
-        //VerifyDirectory();
-        //VerifyFile();
+        VerifyDirectory();
+        VerifyFile();
         using (StreamWriter sw = File.AppendText(GetFilePath()))
         {
             string finalString = "";
