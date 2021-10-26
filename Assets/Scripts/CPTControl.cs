@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 using EasyRoads3Dv3;
+using System;
+using UnityEngine.SceneManagement;
 
 
 public class CPTControl : MonoBehaviour
@@ -23,18 +26,40 @@ public class CPTControl : MonoBehaviour
     // Store the post object with which the CPT collider has collided
     private GameObject currentTrigger;
 
+    // Calculate and save the response times
+    private bool getUserResponse = false;
+    private float timeElapsed;
+    public SaveResponseTimeJSONvariables responseTimeJSON_X;
+    public SaveResponseTimeJSONvariables responseTimeJSON_O;
+    List<SaveResponseTimeJSONvariables> saveRTListData = new List<SaveResponseTimeJSONvariables>();
+    public string jsonData;
     void Start()
     {
         // Get Component from the GameObject to which the BehaviouralData script is appended
         //dataValues = GameObject.Find("CPTPosts").GetComponent<BehaviouralData>();
+        BehaviouralData.truePositives = 0;
+        BehaviouralData.trueNegatives = 0;
+        BehaviouralData.falseNegatives = 0;
+        BehaviouralData.falsePositives = 0;
+        BehaviouralData.TaskNo = 1;
     }
     private void Update()
     {
         // Only if the trigger == true and the objecTag == xsign or osign, make the functionalities work for the respective signs
         if (trigger == true && objectTag == "xsign")
         {
+            responseTime();
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                getUserResponse = false;
+                Debug.Log("Reaction Time for X: " + timeElapsed);
+                responseTimeJSON_X = new SaveResponseTimeJSONvariables();
+                responseTimeJSON_X.postSign = "X-Sign";
+                responseTimeJSON_X.response = "Incorrect";
+                responseTimeJSON_X.responseTime = timeElapsed;
+                responseTimeJSON_X.timeStamp = System.DateTime.UtcNow.ToString();
+                saveRTListData.Add(responseTimeJSON_X);
+
                 // Change color on the posts as a respective feedback
                 currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_Color", Color.red);
                 currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.red);
@@ -53,9 +78,18 @@ public class CPTControl : MonoBehaviour
         }
         else if (trigger == true && objectTag == "osign")
         {
-
+            responseTime();
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                getUserResponse = false;
+                responseTimeJSON_O = new SaveResponseTimeJSONvariables();
+                responseTimeJSON_O.postSign = "O-Sign";
+                responseTimeJSON_O.response = "Correct";
+                responseTimeJSON_O.responseTime = timeElapsed;
+                responseTimeJSON_O.timeStamp = System.DateTime.UtcNow.ToString();
+                Debug.Log("Reaction Time for O: " + timeElapsed);
+                saveRTListData.Add(responseTimeJSON_O);
+
                 // Change color on the posts as a respective feedback
                 currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_Color", Color.green);
                 currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
@@ -73,6 +107,12 @@ public class CPTControl : MonoBehaviour
             }
         }
     }
+    public void SaveJsonDataRT()
+    {
+        jsonData = JsonHelper.ToJson(saveRTListData.ToArray(), true);
+        Debug.Log(jsonData);
+        JSONSaveManager.Save(jsonData, SceneManager.GetActiveScene().name);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -82,6 +122,7 @@ public class CPTControl : MonoBehaviour
         {
             trigger = true;
             keyPressSound = true;
+            getUserResponse = true;
             Debug.Log("We have collided");
 
             // Make the respective sign visible on the post
@@ -93,6 +134,15 @@ public class CPTControl : MonoBehaviour
 
         }
     }
+
+    private void responseTime() {
+        Debug.Log("response time starts");
+        if (getUserResponse == true)
+        {
+            timeElapsed = timeElapsed + Time.deltaTime * 1000;
+        }
+    }
+   
     private void OnTriggerExit(Collider other)
     {
         // As the collision trigger is exited reset everything
@@ -118,6 +168,7 @@ public class CPTControl : MonoBehaviour
             keyPressedXSign = false;
             keyPressedOSign = false;
             Debug.Log(" no collision");
+            timeElapsed = 0f;
         }
     }
 }

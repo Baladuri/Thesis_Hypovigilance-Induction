@@ -1,10 +1,24 @@
-id,Age,Gender,True Positives,True Negatives,False Positives,False Negatives,time stamp
-1,22​,2​,0 TP,0 TN,0 FP,0 FN9/10/2021 9:41:17 PM
-1,22​,2​,0 TP,0 TN,0 FP,0 FN9/10/2021 9:41:35 PM
-2,32​,2​,0 TP,0 TN,0 FP,0 FN9/10/2021 9:43:26 PM
-2,32​,2​,0 TP,0 TN,0 FP,0 FN9/10/2021 9:43:47 PM
-3,221​,1​,0 TP,0 TN,0 FP,0 FN9/12/2021 3:31:51 PM
-4,22​,2​,6 TP,0 TN,1 FP,4 FN9/12/2021 3:35:12 PM
-0 TP,4 TN,0 FP,5 FN9/12/2021 6:23:31 PM
-0,​,​,0 TP,0 TN,0 FP,0 FN9/12/2021 6:28:35 PM
-1,​,​,0 TP,0 TN,0 FP,0 FN9/12/2021 6:30:33 PM
+Task,id,Age,Gender,True Positives,True Negatives,False Positives,False Negatives,User Rating,time stamp
+New Simple Task,0,mike​,1​,1 TP,0 TN,0 FP,0 FN,2 Scale10/21/2021 12:43:50 PM
+New High Load Task,0,mike​,1​,1 TP,0 TN,1 FP,0 FN,9 Scale10/21/2021 12:44:17 PM
+New Controlled Condition,0,mike​,1​,0 TP,0 TN,0 FP,0 FN,1 Scale10/21/2021 12:44:48 PM
+New Simple Task,,1 TP,0 TN,0 FP,0 FN,Arousal level: 3  10/23/2021 1:54:13 PM
+New Simple Task,,1 TP,0 TN,0 FP,0 FN,Arousal level: 3  10/23/2021 1:59:06 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 3  10/23/2021 3:52:34 PM
+New High Load Task,2,1 TP,0 TN,1 FP,0 FN,Arousal level: 10  10/23/2021 3:52:56 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 3  10/23/2021 4:24:43 PM
+New Simple Task,1​30​1​1,1 TP,0 TN,0 FP,0 FN,Arousal level: 0  10/23/2021 4:28:28 PM
+New Simple Task,1​22​1​1,1 TP,0 TN,0 FP,0 FN,Arousal level: 6  10/26/2021 2:02:11 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 5  10/26/2021 2:07:40 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 4  10/26/2021 2:08:41 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 2  10/26/2021 2:11:38 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 7  10/26/2021 2:13:03 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 5  10/26/2021 2:18:41 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 4  10/26/2021 2:22:26 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 5  10/26/2021 2:23:52 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 3  10/26/2021 2:26:36 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 5  10/26/2021 2:30:03 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 4  10/26/2021 2:34:28 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 5  10/26/2021 2:36:56 PM
+New Simple Task,1,0 TP,0 TN,0 FP,1 FN,Arousal level: 5  10/26/2021 2:38:09 PM
+New Simple Task,1,1 TP,0 TN,0 FP,0 FN,Arousal level: 5  10/26/2021 2:39:51 PM

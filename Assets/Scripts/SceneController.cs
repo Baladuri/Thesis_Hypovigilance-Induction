@@ -13,6 +13,7 @@ public class SceneController : MonoBehaviour
     public GameObject taskOverPanel;
     public Animator StartTask;
     private Familarization familarization;
+    public GameObject calibration;
 
     private IEnumerator Start()
     {
@@ -27,6 +28,14 @@ public class SceneController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
+        }
+        if(SceneManager.GetActiveScene().name == "StartMenu")
+        {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                calibration.SetActive(true);
+                Time.timeScale = 1f;
+            }
         }
     }
 
@@ -68,20 +77,20 @@ public class SceneController : MonoBehaviour
     }
 
     IEnumerator HypoVigilTaskDuration() {
-        yield return new WaitForSeconds(600f);
-        BehaviouralData.SaveData();
+        yield return new WaitForSeconds(5f);
+        //BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
 
     }
 
     IEnumerator HyperVigilTaskDuration() {
-        yield return new WaitForSeconds(600f);
-        BehaviouralData.SaveData();
+        yield return new WaitForSeconds(10f);
+        //BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
     }
 
     IEnumerator ControlConditionTaskDuration() {
-        yield return new WaitForSeconds(60f);
+        yield return new WaitForSeconds(10f);
         StartCoroutine(fadeInAnimation());
     }
 
@@ -119,6 +128,6 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("StartMenu");
         //truck.gameObject.SetActive(false);
-    }
+    }  
 
 }

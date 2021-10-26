@@ -10,13 +10,13 @@ public static class CSVManager
     private static string dataFileName = "userData.csv";
     private static string dataSeparator = ",";
     private static string[] fileHeaders = new string[7] {
+        "Task",
         "id",
-        "Age",
-        "Gender",
         "True Positives",
         "True Negatives",
         "False Positives",
-        "False Negatives"
+        "False Negatives",
+        "User Rating"
     };
     private static string timeStampHeader = "time stamp";
 

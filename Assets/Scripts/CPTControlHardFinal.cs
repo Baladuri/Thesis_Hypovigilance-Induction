@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CPTControlHardFinal : MonoBehaviour
 {
@@ -37,10 +38,26 @@ public class CPTControlHardFinal : MonoBehaviour
     // To prevent repeative incrementation in update method
     private bool triggerOnceCross = true;
     private bool triggerOnceCircle = true;
+
+    // Calculte and save the response time
+    private bool getUserResponse = false;
+    private float timeElapsed;
+    public SaveResponseTimeJSONvariables responseTimeJSON_X;
+    public SaveResponseTimeJSONvariables responseTimeJSON_O;
+    public SaveResponseTimeJSONvariables responseTimeJSON_X_correct;
+    public SaveResponseTimeJSONvariables responseTimeJSON_O_incorrect;
+    List<SaveResponseTimeJSONvariables> saveRTListData = new List<SaveResponseTimeJSONvariables>();
+    public string jsonData;
+
     void Start()
     {
         // Get Component from the GameObject to which the BehaviouralData script is appended
         //dataValues = GameObject.Find("CPTPosts").GetComponent<BehaviouralData>();
+        BehaviouralData.truePositives = 0;
+        BehaviouralData.trueNegatives = 0;
+        BehaviouralData.falseNegatives = 0;
+        BehaviouralData.falsePositives = 0;
+        BehaviouralData.TaskNo = 2;
     }
     private void Update()
     {
@@ -50,8 +67,18 @@ public class CPTControlHardFinal : MonoBehaviour
             if (crossesTriggerLimit == false && objectTag == "xsign")
             {
                 normalCases = true;
+                responseTime();
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    getUserResponse = false;
+                    Debug.Log("Reaction Time for X Red: " + timeElapsed);
+                    responseTimeJSON_X = new SaveResponseTimeJSONvariables();
+                    responseTimeJSON_X.postSign = "X-Sign";
+                    responseTimeJSON_X.response = "Incorrect";
+                    responseTimeJSON_X.responseTime = timeElapsed;
+                    responseTimeJSON_X.timeStamp = System.DateTime.UtcNow.ToString();
+                    saveRTListData.Add(responseTimeJSON_X);
+
                     // Change color on the posts as a respective feedback
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_Color", Color.red);
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.red);
@@ -76,8 +103,18 @@ public class CPTControlHardFinal : MonoBehaviour
             else if (crossesTriggerLimit == true && objectTag == "xsign")
             {
                 excepCases = true;
+                responseTime();
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    getUserResponse = false;
+                    Debug.Log("Reaction Time for X Green: " + timeElapsed);
+                    responseTimeJSON_X_correct = new SaveResponseTimeJSONvariables();
+                    responseTimeJSON_X_correct.postSign = "X-Sign";
+                    responseTimeJSON_X_correct.response = "Correct";
+                    responseTimeJSON_X_correct.responseTime = timeElapsed;
+                    responseTimeJSON_X_correct.timeStamp = System.DateTime.UtcNow.ToString();
+                    saveRTListData.Add(responseTimeJSON_X_correct);
+
                     // Change color on the posts as a respective feedback
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_Color", Color.green);
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
@@ -98,8 +135,18 @@ public class CPTControlHardFinal : MonoBehaviour
             else if (circlesTriggerLimit == false && objectTag == "osign")
             {
                 normalCases = true;
+                responseTime();
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    getUserResponse = false;
+                    Debug.Log("Reaction Time for O Green: " + timeElapsed);
+                    responseTimeJSON_O = new SaveResponseTimeJSONvariables();
+                    responseTimeJSON_O.postSign = "O-Sign";
+                    responseTimeJSON_O.response = "Correct";
+                    responseTimeJSON_O.responseTime = timeElapsed;
+                    responseTimeJSON_O.timeStamp = System.DateTime.UtcNow.ToString();
+                    saveRTListData.Add(responseTimeJSON_O);
+
                     // Change color on the posts as a respective feedback
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_Color", Color.green);
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
@@ -125,8 +172,19 @@ public class CPTControlHardFinal : MonoBehaviour
             else if (circlesTriggerLimit == true && objectTag == "osign")
             {
                 excepCases = true;
+                responseTime();
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    getUserResponse = false;
+                    Debug.Log("Reaction Time for O Red: " + timeElapsed);
+                    responseTimeJSON_O_incorrect = new SaveResponseTimeJSONvariables();
+                    responseTimeJSON_O_incorrect.postSign = "O-Sign";
+                    responseTimeJSON_O_incorrect.response = "Incorrect";
+                    responseTimeJSON_O_incorrect.responseTime = timeElapsed;
+                    responseTimeJSON_O_incorrect.timeStamp = System.DateTime.UtcNow.ToString();
+                    saveRTListData.Add(responseTimeJSON_O_incorrect);
+
+
                     // Change color on the posts as a respective feedback
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_Color", Color.red);
                     currentTrigger.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.red);
@@ -149,6 +207,13 @@ public class CPTControlHardFinal : MonoBehaviour
         
     }
 
+    public void SaveJsonDataRT() 
+    {
+        jsonData = JsonHelper.ToJson(saveRTListData.ToArray(), true);
+        Debug.Log(jsonData);
+        JSONSaveManager.Save(jsonData, SceneManager.GetActiveScene().name);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // As the object collides get the tag of the object with which collision happens
@@ -157,6 +222,7 @@ public class CPTControlHardFinal : MonoBehaviour
         {
             trigger = true;
             keyPressSound = true;
+            getUserResponse = true;
             //Debug.Log("We have collided");
 
             // Make the respective sign visible on the post
@@ -181,6 +247,15 @@ public class CPTControlHardFinal : MonoBehaviour
                 circlesTriggerLimit = false;
             }
 
+        }
+    }
+
+    private void responseTime()
+    {
+        Debug.Log("response time starts");
+        if (getUserResponse == true)
+        {
+            timeElapsed = timeElapsed + Time.deltaTime * 1000;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -251,6 +326,8 @@ public class CPTControlHardFinal : MonoBehaviour
 
             triggerOnceCircle = true;
             triggerOnceCross = true;
+
+            timeElapsed = 0f;
         }
     }
 }

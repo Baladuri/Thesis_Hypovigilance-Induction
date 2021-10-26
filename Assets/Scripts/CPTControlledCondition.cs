@@ -6,6 +6,16 @@ using EasyRoads3Dv3;
 
 public class CPTControlledCondition : MonoBehaviour
 {
+    void Start()
+    {
+        // Get Component from the GameObject to which the BehaviouralData script is appended
+        //dataValues = GameObject.Find("CPTPosts").GetComponent<BehaviouralData>();
+        BehaviouralData.truePositives = 0;
+        BehaviouralData.trueNegatives = 0;
+        BehaviouralData.falseNegatives = 0;
+        BehaviouralData.falsePositives = 0;
+        BehaviouralData.TaskNo = 3;
+    }
     private void OnTriggerEnter(Collider other)
     {
         // As the object collides get the tag of the object with which collision happens
