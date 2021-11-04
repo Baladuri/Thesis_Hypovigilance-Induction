@@ -14,13 +14,14 @@ public class SceneController : MonoBehaviour
     public Animator StartTask;
     private Familarization familarization;
     public GameObject calibration;
+    public bool startTaskRelTime = false;
 
     private IEnumerator Start()
     {
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(0.5f);
         StartTask.SetTrigger("Start");
-        familarization = GetComponent<Familarization>();           
+        familarization = GetComponent<Familarization>();
     }
 
     // Update is called once per frame
@@ -77,14 +78,13 @@ public class SceneController : MonoBehaviour
     }
 
     IEnumerator HypoVigilTaskDuration() {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(60f);
         //BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
-
     }
 
     IEnumerator HyperVigilTaskDuration() {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(60f);
         //BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
     }
@@ -96,7 +96,7 @@ public class SceneController : MonoBehaviour
 
     IEnumerator FamilarizationTaskDuration()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(40f);
         StartCoroutine(fadeInAnimation());
         returnToMainMenuPanel.SetActive(true);
     }

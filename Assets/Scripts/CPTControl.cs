@@ -5,6 +5,7 @@ using System.IO;
 using EasyRoads3Dv3;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class CPTControl : MonoBehaviour
@@ -16,7 +17,7 @@ public class CPTControl : MonoBehaviour
     private bool keyPressSound;
 
     // For storing the tag of the object triggered 
-    private string objectTag; 
+    private string objectTag;
 
     // For sending user enteries to the BehavouralData  
     private bool keyPressedOSign = false;
@@ -33,6 +34,10 @@ public class CPTControl : MonoBehaviour
     public SaveResponseTimeJSONvariables responseTimeJSON_O;
     List<SaveResponseTimeJSONvariables> saveRTListData = new List<SaveResponseTimeJSONvariables>();
     public string jsonData;
+
+    private float stopWatch;
+    public string currentTime;
+    public bool taskTimeControl = false;
     void Start()
     {
         // Get Component from the GameObject to which the BehaviouralData script is appended
@@ -45,6 +50,13 @@ public class CPTControl : MonoBehaviour
     }
     private void Update()
     {
+        if (taskTimeControl == true)
+        {
+            stopWatch = stopWatch + Time.deltaTime;
+            TimeSpan time = TimeSpan.FromSeconds(stopWatch);
+            currentTime = time.ToString(@"mm\:ss\:fff");
+        }
+        Debug.Log(currentTime);
         // Only if the trigger == true and the objecTag == xsign or osign, make the functionalities work for the respective signs
         if (trigger == true && objectTag == "xsign")
         {
@@ -58,6 +70,7 @@ public class CPTControl : MonoBehaviour
                 responseTimeJSON_X.response = "Incorrect";
                 responseTimeJSON_X.responseTime = timeElapsed;
                 responseTimeJSON_X.timeStamp = System.DateTime.UtcNow.ToString();
+                responseTimeJSON_X.relative_time = currentTime;
                 saveRTListData.Add(responseTimeJSON_X);
 
                 // Change color on the posts as a respective feedback
@@ -87,6 +100,7 @@ public class CPTControl : MonoBehaviour
                 responseTimeJSON_O.response = "Correct";
                 responseTimeJSON_O.responseTime = timeElapsed;
                 responseTimeJSON_O.timeStamp = System.DateTime.UtcNow.ToString();
+                responseTimeJSON_O.relative_time = currentTime;
                 Debug.Log("Reaction Time for O: " + timeElapsed);
                 saveRTListData.Add(responseTimeJSON_O);
 
@@ -128,7 +142,7 @@ public class CPTControl : MonoBehaviour
             // Make the respective sign visible on the post
             other.gameObject.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("_Color", new Color(153 / 255f, 28 / 255f, 28 / 255f));
             other.gameObject.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("_EmissionColor", new Color(153 / 255f, 28 / 255f, 28 / 255f));
-            
+
             currentTrigger = other.gameObject;
             objectTag = other.gameObject.tag;
 
@@ -141,6 +155,11 @@ public class CPTControl : MonoBehaviour
         {
             timeElapsed = timeElapsed + Time.deltaTime * 1000;
         }
+    }
+
+    public void taskStopWatch()
+    {
+        taskTimeControl = true;
     }
    
     private void OnTriggerExit(Collider other)

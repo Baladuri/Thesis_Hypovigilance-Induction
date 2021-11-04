@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using EasyRoads3Dv3;
+using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CPTControlHardFinal : MonoBehaviour
 {
@@ -49,6 +53,9 @@ public class CPTControlHardFinal : MonoBehaviour
     List<SaveResponseTimeJSONvariables> saveRTListData = new List<SaveResponseTimeJSONvariables>();
     public string jsonData;
 
+    private float stopWatch;
+    public string currentTime;
+    public bool taskTimeControl = false;
     void Start()
     {
         // Get Component from the GameObject to which the BehaviouralData script is appended
@@ -61,6 +68,13 @@ public class CPTControlHardFinal : MonoBehaviour
     }
     private void Update()
     {
+        if (taskTimeControl == true)
+        {
+            stopWatch = stopWatch + Time.deltaTime;
+            TimeSpan time = TimeSpan.FromSeconds(stopWatch);
+            currentTime = time.ToString(@"mm\:ss\:fff");
+        }
+        Debug.Log(currentTime);
         // Only if the trigger == true and the objecTag == xsign or osign, make the functionalities work for the respective signs
         if (trigger == true) 
         {
@@ -77,6 +91,7 @@ public class CPTControlHardFinal : MonoBehaviour
                     responseTimeJSON_X.response = "Incorrect";
                     responseTimeJSON_X.responseTime = timeElapsed;
                     responseTimeJSON_X.timeStamp = System.DateTime.UtcNow.ToString();
+                    responseTimeJSON_X.relative_time = currentTime;
                     saveRTListData.Add(responseTimeJSON_X);
 
                     // Change color on the posts as a respective feedback
@@ -113,6 +128,7 @@ public class CPTControlHardFinal : MonoBehaviour
                     responseTimeJSON_X_correct.response = "Correct";
                     responseTimeJSON_X_correct.responseTime = timeElapsed;
                     responseTimeJSON_X_correct.timeStamp = System.DateTime.UtcNow.ToString();
+                    responseTimeJSON_X_correct.relative_time = currentTime;
                     saveRTListData.Add(responseTimeJSON_X_correct);
 
                     // Change color on the posts as a respective feedback
@@ -145,6 +161,7 @@ public class CPTControlHardFinal : MonoBehaviour
                     responseTimeJSON_O.response = "Correct";
                     responseTimeJSON_O.responseTime = timeElapsed;
                     responseTimeJSON_O.timeStamp = System.DateTime.UtcNow.ToString();
+                    responseTimeJSON_O.relative_time = currentTime;
                     saveRTListData.Add(responseTimeJSON_O);
 
                     // Change color on the posts as a respective feedback
@@ -182,6 +199,7 @@ public class CPTControlHardFinal : MonoBehaviour
                     responseTimeJSON_O_incorrect.response = "Incorrect";
                     responseTimeJSON_O_incorrect.responseTime = timeElapsed;
                     responseTimeJSON_O_incorrect.timeStamp = System.DateTime.UtcNow.ToString();
+                    responseTimeJSON_O_incorrect.relative_time = currentTime;
                     saveRTListData.Add(responseTimeJSON_O_incorrect);
 
 
@@ -257,6 +275,11 @@ public class CPTControlHardFinal : MonoBehaviour
         {
             timeElapsed = timeElapsed + Time.deltaTime * 1000;
         }
+    }
+
+    public void taskStopWatch()
+    {
+        taskTimeControl = true;
     }
     private void OnTriggerExit(Collider other)
     {

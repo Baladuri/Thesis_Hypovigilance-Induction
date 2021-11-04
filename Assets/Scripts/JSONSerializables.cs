@@ -11,6 +11,7 @@ public class SaveResponseTimeJSONvariables
     public string response;
     public float responseTime;
     public string timeStamp;
+    public string relative_time;
 }
 
 [System.Serializable]
@@ -26,4 +27,5 @@ public class SerializePupilData
     public float left_pupil_valid;
     public float right_pupil_valid;
     public string time_stamp;
+    public string relative_time;
 }

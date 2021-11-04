@@ -49,7 +49,7 @@ public class Familarization : MonoBehaviour
 
     IEnumerator keepCloseToMiddleMarker()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         keepCloseToMiddleMarkerPanel.SetActive(true);
         Time.timeScale = 0;
     }

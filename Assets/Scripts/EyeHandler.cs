@@ -2,6 +2,7 @@
 using Tobii.Research;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System;
 
 public class EyeHandler : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class EyeHandler : MonoBehaviour
     SerializePupilData _pupilData;
 
     public List<string> _pupilDataList = new List<string>();
+
+    private float stopWatch;
+    public string currentTime;
+    public bool taskTimeControl = false;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -39,6 +44,13 @@ public class EyeHandler : MonoBehaviour
         {
             transform.position = new Vector2(currentPosition.x, currentPosition.y);
         }*/
+        if (taskTimeControl == true)
+        {
+            stopWatch = stopWatch + Time.deltaTime;
+            TimeSpan time = TimeSpan.FromSeconds(stopWatch);
+            currentTime = time.ToString(@"mm\:ss\:fff");
+        }
+        Debug.Log(currentTime);
         string pupilJson = JsonUtility.ToJson(_pupilData, true).ToString();
         _pupilDataList.Add(pupilJson);
     }
@@ -53,8 +65,7 @@ public class EyeHandler : MonoBehaviour
         Debug.Log("Saving Pupil data for " + SceneManager.GetActiveScene().name+"....");
         foreach (string json in _pupilDataList)
         {
-            SavePupilData.AppendToFile(json);
-            //JSONSaveManager.Save(json, SceneManager.GetActiveScene().name);
+            SavePupilDataManager.AppendToFile(json, SceneManager.GetActiveScene().name);
         }
     }
 
@@ -73,6 +84,7 @@ public class EyeHandler : MonoBehaviour
             _pupilData.right_pupil_valid = e.RightEye.Pupil.PupilDiameter;
         }
         _pupilData.time_stamp = System.DateTime.UtcNow.ToString();
+        _pupilData.relative_time = currentTime;
 
 
         // If There is no valid eye gaze data, stop the function
@@ -97,5 +109,9 @@ public class EyeHandler : MonoBehaviour
         );
 
         currentPosition = position;*/
+    }
+    public void taskStopWatch()
+    {
+        taskTimeControl = true;
     }
 }
