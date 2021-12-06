@@ -83,6 +83,10 @@ public class EyeHandler : MonoBehaviour
         {
             _pupilData.right_pupil_valid = e.RightEye.Pupil.PupilDiameter;
         }
+        else if (e.LeftEye.Pupil.Validity == Validity.Valid && e.RightEye.Pupil.Validity == Validity.Valid)   
+        {
+            _pupilData.both_pupils_valid = (e.LeftEye.Pupil.PupilDiameter + e.RightEye.Pupil.PupilDiameter) / 2;
+        }
         _pupilData.time_stamp = System.DateTime.UtcNow.ToString();
         _pupilData.relative_time = currentTime;
 

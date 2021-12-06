@@ -78,25 +78,25 @@ public class SceneController : MonoBehaviour
     }
 
     IEnumerator HypoVigilTaskDuration() {
-        yield return new WaitForSeconds(60f);
+        yield return new WaitForSeconds(600f);
         //BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
     }
 
     IEnumerator HyperVigilTaskDuration() {
-        yield return new WaitForSeconds(60f);
+        yield return new WaitForSeconds(600f);
         //BehaviouralData.SaveData();
         StartCoroutine(fadeInAnimation());
     }
 
     IEnumerator ControlConditionTaskDuration() {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(600f);
         StartCoroutine(fadeInAnimation());
     }
 
     IEnumerator FamilarizationTaskDuration()
     {
-        yield return new WaitForSeconds(40f);
+        yield return new WaitForSeconds(400f);
         StartCoroutine(fadeInAnimation());
         returnToMainMenuPanel.SetActive(true);
     }

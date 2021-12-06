@@ -1,0 +1,4 @@
+Task,id,True Positives,True Negatives,False Positives,False Negatives,User Rating,time stamp
+New Controlled Condition,16​25​2​3,0 TP,0 TN,0 FP,0 FN,Arousal level: 1  12/4/2021 10:32:21 AM
+New Simple Task,16​25​2​1,92 TP,10 TN,0 FP,1 FN,Arousal level: 4  12/4/2021 10:45:41 AM
+New High Load Task,16​25​2​2,54 TP,30 TN,11 FP,7 FN,Arousal level: 9  12/4/2021 11:02:25 AM

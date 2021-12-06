@@ -26,6 +26,7 @@ public class SerializePupilData
     public float both_pupils_invalid;
     public float left_pupil_valid;
     public float right_pupil_valid;
+    public float both_pupils_valid;
     public string time_stamp;
     public string relative_time;
 }

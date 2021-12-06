@@ -1,0 +1,1025 @@
+Json data for pupil diameters
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
+{
+    "both_pupils_invalid": 0.0,
+    "left_pupil_valid": 0.0,
+    "right_pupil_valid": 0.0,
+    "both_pupils_valid": 0.0,
+    "time_stamp": "",
+    "relative_time": ""
+}
